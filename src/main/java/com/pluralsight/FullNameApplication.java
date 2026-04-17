@@ -8,13 +8,13 @@ public class FullNameApplication {
     public static void main(String[] args) {
         System.out.println("Please enter your name!");
         System.out.print("First name: ");
-        String firstName = scan.nextLine();
+        String firstName = scan.nextLine().trim();
         System.out.print("Middle name: ");
-        String middleName = scan.nextLine();
+        String middleName = scan.nextLine().trim();
         System.out.print("Last name: ");
-        String lastName = scan.nextLine();
+        String lastName = scan.nextLine().trim();
         System.out.print("Suffix: ");
-        String suffix = scan.nextLine();
+        String suffix = scan.nextLine().trim();
 
         String fullName = String.format(
                 "%s %s%s%s",
